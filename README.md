@@ -23,5 +23,4 @@ Al ejecutar el programa se genera automáticamente la carpeta data/ con los sigu
 ## Ejecución del proyecto
 ```bash
 pip install -r requirements.txt
-cd app
 python scraper.py
