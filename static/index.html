@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Scraping Dashboard</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <header class="glass-header">
+            <div class="logo">
+                <i class="fa-solid fa-spider"></i>
+                <h1>Scrape<span class="highlight">Analytics</span></h1>
+            </div>
+            <button id="run-scraper-btn" class="btn-primary">
+                <i class="fa-solid fa-play"></i> Iniciar Scraping
+            </button>
+        </header>
+
+        <div id="status-message" class="hidden"></div>
+
+        <div class="main-content">
+            <div class="charts-wrapper">
+                <div class="chart-card glass-card">
+                    <h2>Top 10 Autores</h2>
+                    <canvas id="authorsChart"></canvas>
+                </div>
+                <div class="chart-card glass-card">
+                    <h2>Sentimiento General</h2>
+                    <canvas id="sentimentChart"></canvas>
+                </div>
+                <div class="chart-card glass-card">
+                    <h2>Top 10 Etiquetas (Tags)</h2>
+                    <canvas id="tagsChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts: jQuery & ChartJS -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Custom JS -->
+    <script src="/static/js/app.js"></script>
+</body>
+</html>
