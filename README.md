@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # 🌐 Web Scraping - Quotes
 
 ## 📌 Descripción
@@ -75,7 +75,6 @@ quotes.csv
 5. Se guardan en CSV
 
 ---
-=======
 # Web Scraping con Asincronismo, Base de Datos y NLP
 
 ## Descripción
@@ -108,4 +107,4 @@ uvicorn main:app --reload
 
 3. **Uso**:
 Abre en tu navegador `http://127.0.0.1:8000/`. Dentro del dashboard, presiona el botón **"Iniciar Scraping"**; este comando desencadenará el robot asíncrono y en cuestión de segundos las gráficas se visualizarán en tiempo real.
->>>>>>> 4a327ec9c61118b700e415da9894c8d5e51f6e2f
+
